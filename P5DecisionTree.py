@@ -35,6 +35,7 @@ X_test = scaler.transform(X_Test)
 
 mlp = MLPClassifier(hidden_layer_sizes=(10, 10, 10), max_iter=1000)
 mlp.fit(X_train, y_train)
+print(mlp.predict(X_test))
 
 print("Weight between input and first hidden layer: ")
 print(mlp.coefs_[0])
