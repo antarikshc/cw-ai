@@ -1,4 +1,4 @@
-from myutils import *
+from util.myutils import *
 
 infinity = float('inf')
 

@@ -5,7 +5,7 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.preprocessing import LabelEncoder
 from sklearn.feature_extraction import DictVectorizer
 
-data = pd.read_csv('data.csv')
+data = pd.read_csv('./util/data.csv')
 cols_to_retain = ['Alt','Bar','Fri','Hun','Pat','Price','Rain','Res','Type','Est']
 
 X_feature = data[cols_to_retain]
